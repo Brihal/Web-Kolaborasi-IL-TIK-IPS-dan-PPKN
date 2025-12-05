@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jejak Hijau Nusantara - Beranda</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+    .cards-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      padding: 40px 0;
+    }
+
+    .card {
+      width: 150px;
+      height: 220px;
+      perspective: 1000px;
+      cursor: pointer;
+    }
+
+    .card .inner {
+      width: 100%;
+      height: 100%;
+      position: relative;
+      transition: transform 0.6s;
+      transform-style: preserve-3d;
+    }
+
+    .card.flipped .inner {
+      transform: rotateY(180deg);
+    }
+
+    .card .front, .card .back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    .card .front img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .card .back {
+      background: white;
+      padding: 10px;
+      transform: rotateY(180deg);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .content-grid {
+      display: flex;
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .content-text {
+      flex: 1;
+    }
+
+    .sdg-photo-box {
+      flex: 0 0 300px;
+      text-align: center;
+    }
+
+    .sdg-photo-box img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .photo-caption {
+      font-size: 0.9em;
+      color: #666;
+      margin-top: 10px;
+    }
+
+    .full-bleed {
+      width: 100vw;
+      margin-left: calc(50% - 50vw);
+      margin-right: calc(50% - 50vw);
+      padding-left: 50px;
+      padding-right: 50px;
+    }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <ul class="nav-menu">
+
+                <li>
+                    <a href="index.html" class="active"> 
+                        <img src="Beranda Button Pls work.png" alt="Button Image" style="height: 40px;">
+                     </a>
+                <li>
+
+                <a href="analisis.html">
+                     <img src="Analisa button.png" alt="Button Image" style="height: 40px;">
+                     </a>
+                <li>
+
+                <li><a href="solusi.html">
+                     <img src="solusi button.png" alt="Button Image" style="height: 40px;">
+                     </a>
+
+                <li class="dropdown">
+                    <a href="kerjasama.html">
+                        <img src="kerja sama button.png" alt="Button Image" style="height: 40px;">
+                        </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="bilateral.html">
+                            <img src="bilateral button.png" alt="Button Image" style="height: 40px;">
+                        <li><a href="regional.html">
+                            <img src="regional button.png" alt="Button Image" style="height: 50px;">
+                        <li><a href="multilateral.html">
+                            <img src="multilateral button.png" alt="Button Image" style="height: 40px;">
+                    </ul>
+                </li>
+                <li><a href="tentang.html">
+                        <img src="tentang saya button.png" alt="Button Image" style="height: 40px;">
+                        </a>
+            </ul>
+        </div>
+    </nav> 
+
+    <header class="banner">
+        <img src="banner jejak hijauu.png" alt="Banner Beranda">
+    </header>
+
+    <section class="spacer-image">
+        <img src="neynyenye.png" alt="Spacer">
+    </section>
+
+    <main class="container">
+        <section class="content-section left-bleed">
+            <div class="content-inner">
+                <h2><mark>Selamat Datang di Jejak Hijau Nusantara👋🤍</mark></h2>
+                <p>Hai hai Sahabat Nusantara! 
+                Selamat datang di Website "Jejak Hijau Nusantara"🌿🍃, sebuah ruang bertujuan untuk meningkatkan kesadaran warga dalam berkontribusi demi mewujudkan dunia yang lebih baik. 
+                Website ini hadir untuk memberikan pemahaman lebih mendalam mengenai SDGs 2, yaitu zero hunger atau dalam bahasa indonesia, tanpa kelaparan 🥣🍜. Di dalamnya, kamu akan menemukan analisis mendalam mengenai SDGs 2 dan beberapa solusi yang kami tawarkan yang bisa di lakukan oleh warga warga sekitar untuk berkontribusi dalam hal ini 💁‍♀️. 
+                </p>
+            </div>
+        </section>
+
+        <section class="content-section full-bleed">
+            <h2>Pertama-tama, Apa Sih Itu SDGs?</h2>
+            <div class="content-grid">
+                <div class="content-text">
+                    <p>
+                        <mark>Sustainable Development Goals (SDGs) merupakan serangkaian tujuan global yang ingin di capai oleh negara negara di seluruh dunia 🌍.</mark>
+                        Sustainable Development Goals ini diciptakan oleh Perserikatan Bangsa-Bangsa (PBB) sebagai panduan agar dapat menciptakan dunia yang lebih sejahtera 📖. Ada 17 SDGs yang saling terhubung satu dengan yang lain.
+                    </p>
+                    <p>
+                        SDGs diresmikan pada tanggal 25 September 2015 di Markas Besar PBB, New York oleh 193 negara anggota PBB melalui UN General Assembly ⚖️👩‍⚖️. <mark>SDGs ini mencakup berbagai aspek seperti kemiskinan, kelaparan, kesehatan, pendidikan, lingkungan, dan kerja sama global.</mark>
+                    </p>
+                    <p>
+                    Negara negara yang telah mengesahkan SDGs ini berkomitmen untuk mencapai target-target yang telah ditetapkan dalam kurun waktu 15 tahun, yaitu dari tahun 2015 hingga 2030 📅. Dengan adanya SDGs, negara negara diberi arah yang jelas untuk menciptakan masa depan yang layak bagi generasi saat ini dan yang akan datang.
+                    </p>
+                </div>
+
+                <aside class="sdg-photo-box">
+                    <img src="SIS-Group-The-United-Nations-Sustainable-Development-Goals-Explained.png" alt="Ilustrasi 17 SDGs">
+                </aside>
+            </div>
+        </section>
+         
+        </section>
+        <section class="sdg-section">
+            <h2> The 17 Sustainable Development Goals (Flip Cards)</h2>
+            <div class="sdg-grid">
+
+              
+                <div class="sdg-card">
+                    <div class="sdg-inner">
+                        <div class="sdg-front">
+                            <img src="SDGs 1.png" alt="SDG 1">
+                        </div>
+                        <div class="sdg-back">
+                            <p><strong>1. Tanpa Kemiskinan</strong></p>
+                                <p>Mengakhiri kemiskinan dan memastikan setiap orang memiliki kebutuhan dasar. 
+                                SDGs ini mendorong akses ekonomi yang setara, kesempatan kerja, dan perlindungan sosial.</p>
+                        </div>
+                    </div>
+                </div>
+                
+
+                <div class="sdg-card">
+                    <div class="sdg-inner">
+                        <div class="sdg-front">
+                            <img src="SDGs 2.png" alt="SDG 2">
+                        </div>
+                        <div class="sdg-back">
+                            <p><strong>2. Tanpa Kelaparan</strong></p>
+                            <p>Menjamin semua orang mendapatkan akses terhadap makanan yang cukup, aman, dan bergizi. 
+                               Dengan tujuan untuk menekankan pertanian berkelanjutan dan produktivitas, serta ketahanan pangan </p>
+                        </div>
+                    </div>
+                </div>
+
+             
+                <div class="sdg-card">
+                    <div class="sdg-inner">
+                        <div class="sdg-front">
+                            <img src="SDGs 3.png" alt="SDG 3">
+                        </div>
+                        <div class="sdg-back">
+                            <p><strong>3. Kehidupan Sehat dan Sejahtera</strong></p>
+                            <p>
+                            Mendorong hidup sehat bagi semua orang dan mengurangi angka kematian, serta meningkatkan pelayanan kesehatan.</p>
+                        </div>
+                    </div>
+                </div>
+
+             
+                <div class="sdg-card">
+                    <div class="sdg-inner">
+                        <div class="sdg-front">
+                            <img src="SDGs 4.png" alt="SDG 4">
+                        </div>
+                        <div class="sdg-back">
+                            <p><strong>4. Pendidikan Berkualitas</strong></p>
+                            <p>
+                                Menjamin pendidikan yang inklusif dan berkualitas bagi semua orang di kalangan manapun </p>
+                        </div>
+                    </div>
+                </div>
+          
+                <div class="sdg-card">
+                    <div class="sdg-inner">
+                        <div class="sdg-front">
+                            <img src="SDG 5.png" alt="SDG 5">
+                        </div>
+                        <div class="sdg-back">
+                            <p><strong>5. Kesetaraan Gender</strong></p>
+                            <p>
+                                Mencapai kesetaraan bagi perempuan dan laki-laki dengan menghapus diskriminasi. 
+                                SDG ini juga memperkuat peran perempuan dalam kepemimpinan dan pengambilan keputusan.  </p>
+                        </div>
+                    </div>
+                </div>
+         
+                <div class="sdg-card">
+                    <div class="sdg-inner">
+                        <div class="sdg-front">
+                            <img src="SDGs 6.png" alt="SDG 6">
+                        </div>
+                        <div class="sdg-back">
+                            <p><strong>6. Air Bersih dan Sanitasi Layak</strong></p>
+                            <p>
+                                Memastikan akses universal terhadap air bersih, sanitasi, dan higiene yang aman. 
+                                SDGs ini mengajak negara untuk mengelola sumber daya air secara berkelanjutan. </p>
+                        </div>
+                    </div>
+                </div>
+
+           
+                <div class="sdg-card">
+                    <div class="sdg-inner">
+                        <div class="sdg-front">
+                            <img src="SDGs 7.png" alt="SDG 7">
+                        </div>
+                        <div class="sdg-back">
+                            <p><strong>7. Energi Bersih dan Terjangkau</strong></p>
+                            <p>Memberikan akses energi modern, bersih, dan terjangkau bagi semua orang. 
+                                SDG ini mendorong penggunaan energi terbarukan dan efisiensi energi.</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="sdg-card">
+                    <div class="sdg-inner">
+                        <div class="sdg-front">
+                            <img src="SDGs 8.png" alt="SDG 8">
+                        </div>
+                        <div class="sdg-back">
+                            <p><strong>8. Pekerjaan Layak dan Pertumbuhan Ekonomi</strong></p>
+                            <p>
+                                Membangun pertumbuhan ekonomi yang inklusif dan berkelanjutan dengan menciptakan lapangan pekerjaan yang layak. </p>
+                        </div>
+                    </div>
+                </div>
+
+           
+                <div class="sdg-card">
+                    <div class="sdg-inner">
+                        <div class="sdg-front">
+                            <img src="SDGs 9.png" alt="SDG 9">
+                        </div>
+                        <div class="sdg-back">
+                            <p><strong>9. Industri, Inovasi, dan Infrastruktur</strong></p>
+                            <p>
+                                Mengembangkan infrastruktur, industrialisasi berkelanjutan, dan mendukung inovasi. 
+                                SDG ini membantu meningkatkan daya saing dan kualitas hidup.</p>
+                        </div>
+                    </div>
+                </div>
+
+        
+                <div class="sdg-card">
+                    <div class="sdg-inner">
+                        <div class="sdg-front">
+                            <img src="SDGs 10.png" alt="SDG 10">
+                        </div>
+                        <div class="sdg-back">
+                            <p><strong>10. Berkurangnya Kesenjangan</strong></p>
+                            <p>
+                                Mengurangi ketimpangan pendapatan dan kesempatan antar negara maupun di dalam negara. 
+                                Tujuan ini menekankan perlindungan kelompok rentan dan kebijakan yang adil.</p>
+                        </div>
+                    </div>
+                </div>
+
+             
+                <div class="sdg-card">
+                    <div class="sdg-inner">
+                        <div class="sdg-front">
+                            <img src="SDGs 11.png" alt="SDG 11">
+                        </div>
+                        <div class="sdg-back">
+                            <p><strong>11. Kota dan Komunitas Berkelanjutan</strong></p>
+                            <p>
+                                Mewujudkan kota yang aman, inklusif, tangguh, dan berkelanjutan. 
+                                SDG ini mencakup transportasi ramah lingkungan, perumahan terjangkau, serta pengurangan risiko bencana.</p>
+                        </div>
+                    </div>
+                </div>
+
+          
+                <div class="sdg-card">
+                    <div class="sdg-inner">
+                        <div class="sdg-front">
+                            <img src="SDGs 12.png" alt="SDG 12">
+                        </div>
+                        <div class="sdg-back">
+                            <p><strong>12. Konsumsi dan Produksi yang Bertanggung Jawab</strong></p>
+                            <p>
+                                Mendorong pola konsumsi dan produksi yang berkelanjutan untuk mengurangi dampak negatif terhadap lingkungan dan masyarakat.</p>
+                        </div>
+                    </div>
+                </div>
+
+         
+                <div class="sdg-card">
+                    <div class="sdg-inner">
+                        <div class="sdg-front">
+                            <img src="SDGs 13.png" alt="SDG 13">
+                        </div>
+                        <div class="sdg-back">
+                            <p><strong>13. Perubahan Iklim</strong></p>
+                            <p>
+                                Mengambil tindakan cepat untuk melawan perubahan iklim dan dampaknya. 
+                                SDG ini mencakup mitigasi, adaptasi, edukasi, dan kerja sama global terkait iklim. </p>
+                        </div>
+                    </div>
+                </div>
+
+   
+                <div class="sdg-card">
+                    <div class="sdg-inner">
+                        <div class="sdg-front">
+                            <img src="SDGs 14.png" alt="SDG 14">
+                        </div>
+                        <div class="sdg-back">
+                            <p><strong>14. Ekosistem Lautan</strong></p>
+                            <p>
+                                Melindungi dan memanfaatkan sumber daya laut secara berkelanjutan. 
+                                SDG ini mencakup pengurangan polusi laut, konservasi terumbu karang, dan pengelolaan perikanan yang bertanggung jawab. </p>
+                        </div>
+                    </div>
+                </div>
+
+ 
+                <div class="sdg-card">
+                    <div class="sdg-inner">
+                        <div class="sdg-front">
+                            <img src="SDGs 15.png" alt="SDG 15">
+                        </div>
+                        <div class="sdg-back">
+                            <p><strong>15. Ekosistem Daratan</strong></p>
+                            <p>
+                                Melestarikan hutan, mencegah desertifikasi, dan menghentikan hilangnya keanekaragaman hayati. 
+                                Tujuan ini juga menjaga ekosistem daratan agar tetap sehat dan produktif.</p>
+                        </div>
+                    </div>
+                </div>
+
+     
+                <div class="sdg-card">
+                    <div class="sdg-inner">
+                        <div class="sdg-front">
+                            <img src="SDGs 16.png" alt="SDG 16">
+                        </div>
+                        <div class="sdg-back">
+                            <p><strong>16. Perdamaian, Keadilan, dan Kelembagaan yang Tangguh</strong></p>
+                            <p>
+                                Mewujudkan masyarakat yang damai, bebas kekerasan, dan menjunjung keadilan. 
+                                SDG ini memperkuat lembaga yang transparan, akuntabel, dan bebas korupsi. </p>
+                        </div>
+                    </div>
+                </div>
+
+     
+                <div class="sdg-card">
+                    <div class="sdg-inner">
+                        <div class="sdg-front">
+                            <img src="SDGs 17.png" alt="SDG 17">
+                        </div>
+                        <div class="sdg-back">
+                            <p><strong>17. Kemitraan untuk Mencapai Tujuan</strong></p>
+                            <p>
+                                Membangun kerja sama global antara negara, lembaga internasional, sektor swasta, dan masyarakat. Tujuan ini memastikan pendanaan, teknologi, dan kolaborasi yang efektif untuk mencapai semua SDGs. </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+
+ <section class="content-section video-section">
+    <h2>"The 17 SDGs By The United Nations"</h2>
+    <div class="video-container">
+        <iframe 
+            width="100%" 
+            height="500" 
+            src="https://www.youtube.com/embed/0XTBYMfZyrM?start=3"
+            title="Video SDGs"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen>
+        </iframe>
+    </div>
+</section>
+
+
+    <footer class="footer">
+       <img src="yaampun.png" alt="Banner Nama Brianna">
+    </footer>
+
+<script>
+const sdgs = [
+  {img: "sdg1.png", title: "SDG 1 – No Poverty", desc: "End poverty in all its forms everywhere."},
+  {img: "sdg2.png", title: "SDG 2 – Zero Hunger", desc: "End hunger and achieve food security."},
+  {img: "sdg3.png", title: "SDG 3 – Good Health", desc: "Ensure healthy lives and promote wellbeing."},
+  {img: "sdg4.png", title: "SDG 4 – Quality Education", desc: "Ensure inclusive and equitable education."},
+  {img: "sdg5.png", title: "SDG 5 – Gender Equality", desc: "Achieve gender equality for all."},
+  {img: "sdg6.png", title: "SDG 6 – Clean Water", desc: "Ensure availability of clean water."},
+  {img: "sdg7.png", title: "SDG 7 – Affordable Energy", desc: "Affordable, reliable and sustainable energy."},
+  {img: "sdg8.png", title: "SDG 8 – Decent Work", desc: "Promote sustained, inclusive economic growth."},
+  {img: "sdg9.png", title: "SDG 9 – Industry, Innovation", desc: "Build resilient infrastructure."},
+  {img: "sdg10.png", title: "SDG 10 – Reduced Inequalities", desc: "Reduce inequality within societies."},
+  {img: "sdg11.png", title: "SDG 11 – Sustainable Cities", desc: "Make cities inclusive and safe."},
+  {img: "sdg12.png", title: "SDG 12 – Responsible Consumption", desc: "Ensure sustainable consumption patterns."},
+  {img: "sdg13.png", title: "SDG 13 – Climate Action", desc: "Take urgent action to combat climate change."},
+  {img: "sdg14.png", title: "SDG 14 – Life Below Water", desc: "Conserve oceans and marine resources."},
+  {img: "sdg15.png", title: "SDG 15 – Life on Land", desc: "Protect, restore and promote ecosystems."},
+  {img: "sdg16.png", title: "SDG 16 – Peace & Justice", desc: "Promote peaceful and inclusive societies."},
+  {img: "sdg17.png", title: "SDG 17 – Partnerships", desc: "Strengthen global partnerships."}
+];
+
+const container = document.getElementById("sdgCards");
+if (container) {
+  sdgs.forEach(sdg => {
+    container.innerHTML += `
+      <div class="card" onclick="this.classList.toggle('flipped')">
+        <div class="inner">
+          <div class="front">
+            <img src="${sdg.img}" alt="${sdg.title}">
+          </div>
+          <div class="back">
+            <h4>${sdg.title}</h4>
+            <p>${sdg.desc}</p>
+          </div>
+        </div>
+      </div>
+    `;
+  });
+}
+</script>
+</body>
+</html>
